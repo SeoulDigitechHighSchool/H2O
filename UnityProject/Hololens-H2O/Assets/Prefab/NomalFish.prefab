@@ -115,10 +115,12 @@ MonoBehaviour:
   tankCenterGoal: {fileID: 0}
   obstacleSensingDistance: 3
   swimSpeedMin: 0.8
-  swimSpeedMax: 2
-  maxTurnRateY: 6.99
+  swimSpeedMax: 5
+  maxTurnRateY: 5
   maxWanderAngle: 45
   wanderPeriodDuration: 0.8
   wanderProbability: 0.15
+  isWiggle: 1
+  isRandomBody: 1
   IsOut: 0
   swimSpeed: 0

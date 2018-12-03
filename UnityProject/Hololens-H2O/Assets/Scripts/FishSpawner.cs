@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FishSpawner : MonoBehaviour {
-    public GameObject nomalFish;
+    public GameObject NomalFish;
+    public GameObject FishGroup;
 
     public int nomalFishCount = 100;
     public int spawnerRange = 50;
@@ -29,7 +30,7 @@ public class FishSpawner : MonoBehaviour {
             }
             else
             {
-                Instantiate(nomalFish, vector, quaternion);
+                Instantiate(NomalFish, vector, quaternion, FishGroup.transform);
             }
         }
     }

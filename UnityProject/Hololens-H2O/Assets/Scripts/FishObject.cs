@@ -19,6 +19,9 @@ public class FishObject : MonoBehaviour
     public float wanderPeriodDuration = 0.8f;
     public float wanderProbability = 0.15f;
 
+    public bool isWiggle = true;
+    public bool isRandomBody = true;
+
     public bool IsOut = false;
 
     [HideInInspector]
@@ -39,9 +42,13 @@ public class FishObject : MonoBehaviour
 
     void Start()
     {
+        float randomSize = Random.Range(0.5f, 1f);
         tankCenterGoal = Camera.main.transform;
         bodyTransform = transform.Find("Body");
-        Instantiate(fishModel[Random.Range(0, fishModel.Count)], bodyTransform);
+        if (isRandomBody)
+        {
+            Instantiate(fishModel[Random.Range(0, fishModel.Count)], bodyTransform).transform.localScale = new Vector3(randomSize, randomSize, randomSize);
+        }
         randomOffset = Random.value;
     }
 
@@ -79,6 +86,7 @@ public class FishObject : MonoBehaviour
 
     void Wiggle()
     {
+        if (!isWiggle) return;
         float speedPercent = swimSpeed / swimSpeedMax;
         float minWiggleSpeed = 12f;
         float maxWiggleSpeed = minWiggleSpeed + 1f;
