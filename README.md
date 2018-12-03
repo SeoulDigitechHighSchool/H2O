@@ -15,7 +15,7 @@ Unity
 * Universal Windows Platform
 * Hololnes
 
-### 프로젝트 버전
+### 프로젝트 타겟  버전
 
 * Unity 2018.2.13f1
 * 다운로드: https://unity3d.com/kr/get-unity/download?thank-you=update&download_nid=58495&os=Win
