@@ -25,5 +25,5 @@ Unity
 * Unity에서 "Hololens-H2O/UnityProject/Hololens-H2O"의 폴더를 프로젝트로 연다. Scenes 폴더에서 Main Scenes를 연다.
 * 그런 뒤에 "Hololens-H2O/Plugin/HoloToolkit-Unity-2017.4.2.0.unitypackage"을 실행해 유니티에서 패키지를 임포트한다.
 * 임포트를 하면 유니티 상단메뉴에 "Mixed Reality Toolkit"이 생긴다. 해당 메뉴에서 Configure > Apply Mixed Reality Project Settings을 클릭한다.
-* 세팅 창이 뜨면 체크박스에서 "Use Toolkit-specific InputManager axes"를 체크하고 "Apply"를 클릭한다.
+* 세팅 창이 뜨면 체크박스에서 "Use Toolkit-specific InputManager axes"를  체크하고 "Apply"를 클릭한다.
 * 이제 자신만의 프로젝트를 진행하면 된다.
