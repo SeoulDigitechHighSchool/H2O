@@ -338,7 +338,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4820042564546740}
   - component: {fileID: 137624883197163826}
-  - component: {fileID: 114433056082135858}
   - component: {fileID: 136310067817356936}
   m_Layer: 0
   m_Name: humpback_whale_exp1_0
@@ -629,14 +628,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1357994413843922}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.9538743, z: -0, w: 0.30020648}
+  m_LocalPosition: {x: -29.4, y: 41.9, z: 0.1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4744462313354278}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 145.06, z: 0}
 --- !u!4 &4408548717998822
 Transform:
   m_ObjectHideFlags: 1
@@ -886,17 +885,6 @@ MonoBehaviour:
   isRandomBody: 0
   IsOut: 0
   swimSpeed: 0
---- !u!114 &114433056082135858
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1720024050390784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d55417b2e55bf97428ce46aa0073b5da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!136 &136310067817356936
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -946,7 +934,7 @@ SkinnedMeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   serializedVersion: 2
-  m_Quality: 0
+  m_Quality: 2
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 4300000, guid: 035a8130f4329504aaa80f75dc72628d, type: 3}

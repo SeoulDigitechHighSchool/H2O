@@ -42,7 +42,7 @@ public class FishObject : MonoBehaviour
 
     void Start()
     {
-        float randomSize = Random.Range(0.5f, 1f);
+        float randomSize = Random.Range(0.2f, 0.5f);
         tankCenterGoal = Camera.main.transform;
         bodyTransform = transform.Find("Body");
         if (isRandomBody)
@@ -52,7 +52,7 @@ public class FishObject : MonoBehaviour
         randomOffset = Random.value;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         Wiggle();
         Wander();
@@ -67,9 +67,9 @@ public class FishObject : MonoBehaviour
         DrawDebugAids();
     }
 
-    void OnTriggerEnter(Collider Collider)
+    private void OnTriggerStay(Collider Collider)
     {
-        if (Collider.gameObject.tag == "range")
+        if (Collider.gameObject.tag.Equals("range"))
         {
             IsOut = false;
         }
@@ -77,7 +77,7 @@ public class FishObject : MonoBehaviour
    
     void OnTriggerExit(Collider Collider)
     {
-        if (Collider.gameObject.tag == "range")
+        if (Collider.gameObject.tag.Equals("range"))
         {
             IsOut = true;
         }
